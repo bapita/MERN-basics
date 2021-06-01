@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Leme", 
+        "email": "a@b.com",
+        "address": {
+            "street": "1 valley",
+            "suite": "123", 
+            "city": "Los angles", 
+            "zipcode": "098-786",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "87987-98787-54",
+        "website": "abc.com",
+        "company": {
+            "name": "ABC",
+            "bs": "65465465dasdads"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Pora", 
+        "email": "assw@bee.com",
+        "address": {
+            "street": "asd1 valley",
+            "suite": "123", 
+            "city": "Ghan bang", 
+            "zipcode": "098-786",
+            "geo": {
+                "lat": "-87.3159",
+                "lng": "31.1496"
+            }
+        },
+        "phone": "87987-98787-54",
+        "website": "pqr.com",
+        "company": {
+            "name": "PQR",
+            "bs": "654654654asdas"
+        }
+    }
+]

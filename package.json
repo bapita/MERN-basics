@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "this is demo code",
+  "main": "asyncModule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bapita Roy",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "validator": "^13.6.0"
+  }
+}
