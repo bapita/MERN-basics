@@ -1,0 +1,140 @@
+
+body {
+    background: #222f3e;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 70vh;
+    background: rgb(43, 200, 235);
+    border-radius: 5px;
+    font-family: "dancing script", cursive;
+    overflow: hidden;
+    color: #797d7f;
+    letter-spacing: 0.5px;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.inner {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.number::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: -385px;
+    width: 90px;
+    height: 200px;
+    background: var(--secondary-color);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: -1;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
+}
+
+.number {
+    font-family: var(--sans);
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.number img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 350px;
+    top: 7px;
+    cursor: pointer;
+    animation: rot 1s infinite;
+}
+
+.number:hover img {
+    animation: rot 1s infinite;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.quote { 
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 1.3rem;
+}
+
+.author { 
+    position: absolute;
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 30%;
+    margin-left: 90%;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 0 0.12em;
+    border: 1px solid #666;
+    border-radius: 0.25em;
+    background-image: linear-gradient( to bottom, #fff, #ccc );
+    box-shadow: inset 0 0 0.1em #fff, 0.2em 0.2em 0.2em rgba( 0, 0, 0, 0.3 );
+    font-family: arial, sans-serif;
+    font-size: 0.8em;
+    margin-top: 85px;
+    margin-left: 130px;
+ }
+
+.button:hover {
+    border-color: #3c7fb1;
+    background-image: linear-gradient( to bottom, #fff, #a9dbf6 );
+    cursor: pointer;
+ }
+
+.button:focus {
+    padding: 0  0.56em 0 0.68em;
+ }
