@@ -1,2 +1,55 @@
 welcome to Node JS
 This is a demo
+
+//********* about Mongo DB *******//
+It is a non-relational document oriented DBMS and works on document based DB. 
+Mongo DB stores data in the form of documents 
+Uses BSON to query database  i.e. Binary-JSON. It helps to parse data more efficiently than JSON
+
+Data are stored as collection (Array of objects) like Table in SQL
+Row in SQL is represented as a Document in MongoDB. i.e. one object 
+Columns in SQL is represented as feilds in MongoDB
+
+One document in mongo DB can have 7 feilds and other document can have 6 or 8 feilds. 
+so it is flexible
+
+
+// *** Mongo DB server start ** // 
+ sudo service mongod start 
+ sudo service mongod status
+
+// ** Enter into Mongo DB **//
+mongo --quiet 
+
+// ** show all databases ** //
+show dbs 
+
+// ** check active database **//
+db 
+
+// ** Select DB or create DB **//
+use <DB name>
+
+// ** Create or insert collection one by one ** //
+db.<collection name>.insertOne({name: "string", age: number, status:boolean(true/false) })
+
+// ** Create or insert collection many at once ** //
+db.<collection name>.insertMany([
+    {name: "string", age: number, status:boolean(true/false) },
+    {name: "string", age: number, status:boolean(true/false) },
+    {name: "string", age: number, status:boolean(true/false) }
+    ])   
+--> works as array of objects
+
+// ** see the collections in a DB **//
+show collections (table)
+
+// ** See the document (rows) in a collection ** // 
+db.<collection name>.find()           --> this will show feilds in a straight line with an ID (primary key)
+db.<collection name>.find().pretty()  --> this will display feilds in a prettier format with an ID
+
+
+// ** Query the documents and collections  **//
+db.collection.find(query,projection)
+
+
