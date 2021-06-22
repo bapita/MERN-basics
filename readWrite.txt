@@ -20,6 +20,8 @@ so it is flexible
 
 // ** Enter into Mongo DB **//
 mongo --quiet 
+or,
+mongo 
 
 // ** show all databases ** //
 show dbs 
@@ -52,4 +54,16 @@ db.<collection name>.find().pretty()  --> this will display feilds in a prettier
 // ** Query the documents and collections  **//
 db.collection.find(query,projection)
 
+//** update query  ** //
+db.COLLECTION_NAME.updateOne(<filter>, <update>)
+db.COLLECTION_NAME.updateMany(<filter>, <update>)
+eg: db.persoanldata.updateOne({name: "bapita"}, {$set: {address:"Mumbai"} })
+the $set operator replaces the value of a feild by specified value 
+
+// ** Delete query for document ** // 
+db.COLLECTION_NAME.deleteMany(DELETION_CRITERIA)
+eg: db.personaldata.deleteMany({name:"demo name"})
+
+// ** Delete all the documents inside the collection ** // 
+db.COLLECTION_NAME.deleteMany({})
 
